@@ -1,0 +1,9 @@
+   		
+the article part 1 is the same with T1
+
+the article part 2 is not the same with T1
+
+   		
+the article part 3 is not the same with T2
+
+the article part 4 is not the same with T2

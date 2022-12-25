@@ -1,0 +1,15 @@
+The computer that knows what you're thinking
+It is one of the advantages of being human that we can, when the time is appropriate, conceal our innermost feelings.
+But that could be about to change as computers get better not just at recognising faces but also at understanding what the person behind it is actually thinking.
+That is the project Daniel McDuff has been working on at the Massachusetts Institute of Technology's Media Lab, where he is developing emotion-reading computers.
+It could eventually lead to machines that have emotional intelligence, or even everyday objects that are able to empathise with our moods - a mirror that knows how you feel about the way you look, a fridge that can offer you food that matches your state of mind or a car that recognises when you are stressed.
+Joy and fear
+The system Dr McDuff is developing works via a basic webcam that detects a range of different facial movements from frowning to smiling.
+It translates that into seven of the most commonly recognised emotional states - sadness, amusement, surprise, fear, joy, disgust and contempt.
+The computer learns from a huge database of four million videos from volunteers and paid-for market researchers in various emotional states and the algorithms are constantly updated and tested against real-world scenarios.
+The next stage is to integrate voice analysis and other measures of physical wellbeing such as heart rate and hand gestures.
+Cultural differences
+Already the data has revealed that there are big differences in emotional responses between men and women and between different age groups and demographics.
+"There are significant differences in different countries as to how people express themselves," Dr McDuff told the BBC.
+"In collectivist cultures where your family group is more important, people are most expressive in these small groups, whereas in more individualistic cultures like Western Europe the emphasis is more about building relationships with strangers and people tend to be more positive around people who they are less familiar with."
+He also found that when people mask their true feelings, the computer can recognise subtle differences.

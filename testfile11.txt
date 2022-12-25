@@ -1,0 +1,2 @@
+A computer model has been developed that can predict what word you are thinking of. The model may help to resolve questions about how the brain processes words and language, and might even lead to techniques for decoding people’s thoughts.
+Researchers led by Tom Mitchell of Carnegie Mellon University in Pittsburgh, Pennsylvania, 'trained' a computer model to recognize the patterns of brain activity associated with 60 images, each of which represented a different noun, such as 'celery' or 'aeroplane'.

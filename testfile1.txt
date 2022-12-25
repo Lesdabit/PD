@@ -1,0 +1,2 @@
+The computer learns from a huge database of four million videos from volunteers and paid-for market researchers in various emotional states and the algorithms are constantly updated and tested against real-world scenarios.
+The next stage is to integrate voice analysis and other measures of physical wellbeing such as heart rate and hand gestures.
