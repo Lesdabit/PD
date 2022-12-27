@@ -60,8 +60,22 @@ int main() {
 			FILE.close();
 			string T_filename;
 			for (int i = 0; i < T_num; i++) {
-				cout << "Enter T filename > ";
-				getline(cin, T_filename);
+				if (s_filename == "S1.txt") {
+					if (i == 0) T_filename = "T1.txt";
+					else T_filename = "T2.txt";
+				}
+				else if (s_filename == "testfile1.txt") {
+					if (i == 0) T_filename = "testfile11.txt";
+					else T_filename = "testfile12.txt";
+				}
+				else if (s_filename == "testfile2.txt") {
+					if (i == 0) T_filename = "testfile21.txt";
+					else T_filename = "testfile22.txt";
+				}
+				else {
+					cout << "Enter T filename > ";
+					cin >> T_filename;
+				}
 				FILE.open(T_filename, ios::in);
 				context2.clear();
 				while (getline(FILE, s)) {
@@ -69,6 +83,7 @@ int main() {
 				}
 				FILE.close();
 
+				cout << endl << T_filename << ":" << endl << endl;
 				cout << endl << "Method 1" << endl;
 				PD_method1(context1, context2);
 				cout << endl << "Method 2";
@@ -153,10 +168,12 @@ void PD_method1(vector<string> s, vector<string> t) {
 			i--;
 		}
 	}
-	for (int i = 0; i < s.size(); i++) total_s += s[i].length();
-	for (int i = 0; i < t.size(); i++) total_t += t[i].length();
-	int max = find_max(total_s, total_t);
-	for (int i = 0; i < s.size(); i++) minED += min_edit(s[i], t[i]);
+	string context1;
+	string context2;
+	for (int i = 0; i < s.size(); i++) context1.append(s[i]);
+	for (int i = 0; i < t.size(); i++) context2.append(t[i]);
+	int max = find_max(context1.length(), context2.length());
+	minED = min_edit(context1, context2);
 	double result = 1 - (double)minED / (double)max;
 	cout << endl << "d(s,t) = " << result << endl << endl;
 	//for (int i = 0; i < t.size(); i++) cout << t[i] << endl;
@@ -188,8 +205,9 @@ void PD_method2(vector<string> s, vector<string> t) {
 	}
 	vector<string> context1 = s;
 	vector<string> context2 = t;
+	/*
 	int count = 0;
-	/*for (int i = 0; i < s.size(); i++) {
+	for (int i = 0; i < s.size(); i++) {
 		if (s[i].length() != 0 && i < s.size()) {
 			context1.push_back(s[i]);
 			if (i < s.size() - 1) i++;
@@ -215,7 +233,8 @@ void PD_method2(vector<string> s, vector<string> t) {
 		}
 		if (i >= t.size()) break;
 		if (t[i].length() == 0 && !context2.empty()) count++;
-	}*/
+	}
+	*/
 	vector<double> d;
 	vector<double> dmax;
 	for (int i = 0; i < context1.size(); i++) {
