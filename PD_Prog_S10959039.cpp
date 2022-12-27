@@ -37,7 +37,7 @@ int main() {
 			getline(cin, fixed_line);
 			getline(cin, change_line);
 
-			cout << "The minimum edit distance is " << min_edit(fixed_line, change_line) << endl;
+			cout << endl << "The minimum edit distance is " << min_edit(fixed_line, change_line) << endl;
 			cout << "The Levenshtein distance is " << lev_edit(fixed_line, change_line) << endl << endl << endl;
 		}
 		else if (question == "2") {
@@ -69,20 +69,10 @@ int main() {
 				}
 				FILE.close();
 
-				string method;
-				cout << endl << "1) method 1" << endl;
-				cout << "2) method 2" << endl;
-				cout << "Select method 1 or 2 > ";
-				getline(cin, method);
-				if (method == "1") {
-					PD_method1(context1, context2);
-				}
-				else if (method == "2") {
-					PD_method2(context1, context2);
-				}
-				else {
-					cout << "WRONG!!!" << endl << endl;
-				}
+				cout << endl << "Method 1" << endl;
+				PD_method1(context1, context2);
+				cout << endl << "Method 2";
+				PD_method2(context1, context2);
 			}
 		}
 		else {
@@ -208,7 +198,7 @@ void PD_method2(vector<string> s, vector<string> t) {
 			context1[count].append(s[i]);
 			i++;
 			if (i > s.size() - 1) break;
-		} 
+		}
 		if (i >= s.size()) break;
 		if (s[i].length() == 0 && !context1.empty()) count++;
 	}
